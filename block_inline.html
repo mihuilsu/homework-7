@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block & Inline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <nav class="page-navigation">
+            <a href="./index.html">Home</a>
+            <a href="./block_inline.html">Block & Inline</a>
+            <a href="./display_box.html">Display & Box-sizing</a>
+            <a href="./normalize.html">Normalize CSS</a>
+            <a href="./reset.html">Reset CSS</a>
+            <a href="./float.html">Float & Clear</a>
+            <a href="./overflow.html">Overflow</a>
+            <a href="./position.html">Positioning</a>
+        </nav>
+
+        <h1>Block and Inline Elements</h1>
+
+        <section class="demo-section">
+            <h2>Block Elements (div)</h2>
+            <p>Block elements take up the full width and start on a new line.</p>
+
+            <div class="example">
+                <div class="block-div">First div block</div>
+                <div class="block-div">Second div block</div>
+                <div class="block-div">Third div block</div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Inline Elements (span)</h2>
+            <p>Inline elements flow within the text and only take up necessary space.</p>
+
+            <div class="example">
+                <p>This is a paragraph with
+                    <span class="inline-span">first span</span> and
+                    <span class="inline-span">second span</span> and
+                    <span class="inline-span">third span</span> inside it.
+                </p>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Mixed Block and Inline Elements</h2>
+
+            <div class="example">
+                <div class="block-div">Block div element</div>
+                <span class="inline-span">Inline span after div</span>
+                <span class="inline-span">Another inline span</span>
+                <div class="block-div">Another block div</div>
+                <p>Paragraph with <span class="inline-span">inline span</span> inside</p>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Changing Display Properties</h2>
+
+            <div class="example">
+                <h3>Div made inline</h3>
+                <div class="div-inline">Div 1</div>
+                <div class="div-inline">Div 2</div>
+                <div class="div-inline">Div 3</div>
+            </div>
+
+            <div class="example">
+                <h3>Span made block</h3>
+                <span class="span-block">Span 1</span>
+                <span class="span-block">Span 2</span>
+                <span class="span-block">Span 3</span>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

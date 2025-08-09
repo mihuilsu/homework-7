@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display & Box-size</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <nav class="page-navigation">
+            <a href="./index.html">Home</a>
+            <a href="./block_inline.html">Block & Inline</a>
+            <a href="./display_box.html">Display & Box-sizing</a>
+            <a href="./normalize.html">Normalize CSS</a>
+            <a href="./reset.html">Reset CSS</a>
+            <a href="./float.html">Float & Clear</a>
+            <a href="./overflow.html">Overflow</a>
+            <a href="./position.html">Positioning</a>
+        </nav>
+        
+        <h1>Display and Box-sizing Properties</h1>
+
+        <section class="demo-section">
+            <h2>Display Property Examples</h2>
+
+            <div class="example">
+                <h3>display: block</h3>
+                <p>Block elements take up the full width available and start on a new line.</p>
+                <div class="demo-container">
+                    <div class="element block">Block Element 1</div>
+                    <div class="element block">Block Element 2</div>
+                    <div class="element block">Block Element 3</div>
+                </div>
+            </div>
+
+            <div class="example">
+                <h3>display: inline</h3>
+                <p>Inline elements only take up as much width as necessary and flow horizontally.</p>
+                <div class="demo-container">
+                    <div class="element inline">Inline 1</div>
+                    <div class="element inline">Inline 2</div>
+                    <div class="element inline">Inline 3</div>
+                </div>
+            </div>
+
+            <div class="example">
+                <h3>display: inline-block</h3>
+                <p>Elements flow horizontally but can have width and height set.</p>
+                <div class="demo-container">
+                    <div class="element inline-block">Inline-block 1</div>
+                    <div class="element inline-block">Inline-block 2</div>
+                    <div class="element inline-block">Inline-block 3</div>
+                </div>
+            </div>
+
+            <div class="example">
+                <h3>display: flex</h3>
+                <p>Creates a flexible container for arranging child elements with space distribution.</p>
+                <div class="demo-container flex-container">
+                    <div class="element flex-item">Item 1</div>
+                    <div class="element flex-item">Item 2</div>
+                    <div class="element flex-item">Item 3</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Box-sizing Property Examples</h2>
+
+            <div class="example">
+                <h3>box-sizing: content-box (default)</h3>
+                <p>Width and height include only the content. Padding and border are added outside.</p>
+                <div class="demo-container">
+                    <div class="box-element content-box">
+                        Content-box<br>
+                        Width: 200px + Padding: 2×20px + Border: 2×5px = Total: 250px
+                    </div>
+                </div>
+            </div>
+
+            <div class="example">
+                <h3>box-sizing: border-box</h3>
+                <p>Width and height include content, padding, and border.</p>
+                <div class="demo-container">
+                    <div class="box-element border-box">
+                        Border-box<br>
+                        Total width stays 200px (content area shrinks)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Element positoning</h1>
+
+        <nav class="page-navigation">
+            <a href="./index.html">Home</a>
+            <a href="./block_inline.html">Block & Inline</a>
+            <a href="./display_box.html">Display & Box-sizing</a>
+            <a href="./normalize.html">Normalize CSS</a>
+            <a href="./reset.html">Reset CSS</a>
+            <a href="./float.html">Float & Clear</a>
+            <a href="./overflow.html">Overflow</a>
+            <a href="./position.html">Positioning</a>
+        </nav>
+
+        <section class="demo-section">
+            <h2>position: static (default)</h2>
+            <p>Elements follow the normal document flow. Top, right, bottom, left have no effect.</p>
+
+            <div class="example">
+                <div class="position-static">Static positioned element</div>
+                <div class="position-static">Another static element</div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>position: relative</h2>
+            <p>Element is positioned relative to its normal position in the document flow.</p>
+
+            <div class="example">
+                <div class="position-static">Normal element</div>
+                <div class="position-relative">Relatively positioned (moved 20px right and 10px down)</div>
+                <div class="position-static">Another normal element</div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>position: absolute</h2>
+            <p>Element is positioned relative to its nearest positioned ancestor.</p>
+
+            <div class="example">
+                <div class="relative-container">
+                    <p>This is a relatively positioned container.</p>
+                    <div class="position-absolute">Absolutely positioned element</div>
+                    <p>Other content in the container continues to flow normally.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>position: fixed vs position: sticky</h2>
+            <p>Both properties can make elements stick during scroll, but they behave differently.</p>
+
+            <div class="example">
+                
+                <div class="position-fixed">Fixed element (always top-right)</div>
+
+                <div class="position-sticky">Sticky element - sticks to top when scrolling</div>
+
+                <div class="scroll-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium.</p>
+                    <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        quasi architecto beatae vitae dicta sunt.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eos ducimus asperiores quasi,
+                        odit sunt maiores natus unde magnam esse tempore fugit perspiciatis doloremque veritatis
+                        deleniti blanditiis explicabo rerum eligendi.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, vero nisi. Voluptate
+                        perferendis tempore saepe impedit. Consectetur sunt ipsam perspiciatis. A minus error eum iure
+                        sint? Ullam voluptatibus sed dignissimos.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, vero nisi. Voluptate
+                        perferendis tempore saepe impedit. Consectetur sunt ipsam perspiciatis. A minus error eum iure
+                        sint? Ullam voluptatibus sed dignissimos.
+                    </p>
+                </div>
+
+                <p><strong>Key Differences:</strong></p>
+                <p><strong>Fixed:</strong> Always in the same viewport position, removed from document flow.</p>
+                <p><strong>Sticky:</strong> Stays in document flow until scroll threshold, then becomes fixed.</p>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

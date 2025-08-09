@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="page-navigation">
+            <a href="./index.html">Home</a>
+            <a href="./block_inline.html">Block & Inline</a>
+            <a href="./display_box.html">Display & Box-sizing</a>
+            <a href="./normalize.html">Normalize CSS</a>
+            <a href="./reset.html">Reset CSS</a>
+            <a href="./float.html">Float & Clear</a>
+            <a href="./overflow.html">Overflow</a>
+            <a href="./position.html">Positioning</a>
+        </nav>
+
+        <h1>Float and Clear Properties</h1>
+
+        <section class="demo-section">
+            <h2>Float Left</h2>
+            <p>Elements floated to the left side with text wrapping around.</p>
+
+            <div class="example">
+                <div class="float-left">Float Left Box</div>
+                <p>This text wraps around the floated element. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Float Right</h2>
+            <p>Elements floated to the right side with text wrapping around.</p>
+
+            <div class="example">
+                <div class="float-right">Float Right Box</div>
+                <p>This text wraps around the right-floated element. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Multiple Floated Elements</h2>
+            <p>Several elements floated in the same direction.</p>
+
+            <div class="example">
+                <div class="float-left small">Box 1</div>
+                <div class="float-left small">Box 2</div>
+                <div class="float-left small">Box 3</div>
+                <p>Text content flows around all floated elements. The floated boxes stack
+                    horizontally until there's no more room, then they wrap to the next line.</p>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Clear Property</h2>
+            <p>Using clear to control how elements behave around floated elements.</p>
+
+            <div class="example">
+                <div class="float-left">Floated Left</div>
+                <div class="float-right">Floated Right</div>
+                <p>This paragraph flows around the floated elements normally.</p>
+                <p class="clear-both">This paragraph uses clear: both and appears below all floated elements.</p>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Clear Left vs Clear Right</h2>
+
+            <div class="example">
+                <div class="float-left">Float Left</div>
+                <p class="clear-left">This text uses clear: left and appears below the left-floated element.</p>
+            </div>
+
+            <div class="example">
+                <div class="float-right">Float Right</div>
+                <p class="clear-right">This text uses clear: right and appears below the right-floated element.</p>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+/* index.html */
+.navigation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.nav-button {
+    background: white;
+    border: 2px solid #3498db;
+    padding: 20px;
+    text-decoration: none;
+    color: #2c3e50;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.nav-button:hover {
+    background: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.nav-button h3 {
+    margin-bottom: 10px;
+    color: inherit;
+}
+
+.nav-button p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Page navigation */
+.page-navigation {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.page-navigation a {
+    padding: 5px 10px;
+    background: lightblue;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 0.9em;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+.page-navigation a:hover {
+    background: lightcoral;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+}
+
+.flex-item {
+    background: #2980b9;
+    flex: 0 1 120px;
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.position-sticky {
+    position: sticky;
+    top: 0;
+    background: #27ae60;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    z-index: 100;
+}
+
+/* Draft elements */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+h2 {
+    color: #34495e;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+h3 {
+    color: #2980b9;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Section styles */
+.demo-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-left: 4px solid #3498db;
+}
+
+.example {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+.demo-container {
+    background: #fff;
+    border: 1px dashed #3498db;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Display properties */
+.element {
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.block {
+    display: block;
+    background: #e74c3c;
+}
+
+.inline {
+    display: inline;
+    background: #27ae60;
+}
+
+.inline-block {
+    display: inline-block;
+    background: #8e44ad;
+    width: 120px;
+    height: 50px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item {
+    background: #2980b9;
+    flex: 1;
+    margin: 0 5px;
+}
+
+/* Box-sizing properties */
+.box-element {
+    background: #16a085;
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.content-box {
+    box-sizing: content-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #e74c3c;
+}
+
+.border-box {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #2980b9;
+}
+
+/* Block and inline elements */
+.block-div {
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.inline-span {
+    background: #e67e22;
+    color: white;
+    padding: 5px;
+}
+
+.div-inline {
+    display: inline;
+    background: #9b59b6;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.span-block {
+    display: block;
+    background: #1abc9c;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Description text for normalize/reset page */
+.description-text {
+    background: #ecf0f1;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 4px solid #3498db;
+}
+
+/* Float and clear properties */
+.float-left {
+    float: left;
+    background: #e74c3c;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    width: 150px;
+}
+
+.float-right {
+    float: right;
+    background: #27ae60;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    width: 150px;
+}
+
+.float-left.small {
+    width: 100px;
+    padding: 10px;
+}
+
+.clear-both {
+    clear: both;
+    background: #f39c12;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.clear-left {
+    clear: left;
+    background: #8e44ad;
+    color: white;
+    padding: 10px;
+}
+
+.clear-right {
+    clear: right;
+    background: #2980b9;
+    color: white;
+    padding: 10px;
+}
+
+/* Overflow properties */
+.overflow-container {
+    width: 300px;
+    height: 100px;
+    border: 2px solid #3498db;
+    background: #ecf0f1;
+    margin: 10px 0;
+}
+
+.overflow-visible {
+    overflow: visible;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-x-scroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.overflow-y-scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.wide-content {
+    width: 500px;
+    background: #f39c12;
+    color: white;
+    padding: 10px;
+}
+
+/* Positioning properties */
+.position-static {
+    background: #bdc3c7;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.position-relative {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    background: #e67e22;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.relative-container {
+    position: relative;
+    background: #ecf0f1;
+    padding: 20px;
+    height: 150px;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e74c3c;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+
+.position-fixed {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #8e44ad;
+    color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.position-sticky {
+    position: sticky;
+    top: 0;
+    background: #27ae60;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+}

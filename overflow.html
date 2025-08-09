@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="page-navigation">
+            <a href="./index.html">Home</a>
+            <a href="./block_inline.html">Block & Inline</a>
+            <a href="./display_box.html">Display & Box-sizing</a>
+            <a href="./normalize.html">Normalize CSS</a>
+            <a href="./reset.html">Reset CSS</a>
+            <a href="./float.html">Float & Clear</a>
+            <a href="./overflow.html">Overflow</a>
+            <a href="./position.html">Positioning</a>
+        </nav>
+
+        <h1>Overflow Property</h1>
+
+        <section class="demo-section">
+            <h2>overflow: visible (default)</h2>
+            <p>Content overflows the container boundaries and is still visible.</p>
+
+            <div class="example">
+                <div class="overflow-container overflow-visible">
+                    <p>This is a lot of content that exceeds the container dimensions.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris. This content will
+                        overflow and be visible outside the container boundaries.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>overflow: hidden</h2>
+            <p>Content that exceeds the container is clipped and hidden.</p>
+
+            <div class="example">
+                <div class="overflow-container overflow-hidden">
+                    <p>This is a lot of content that exceeds the container dimensions.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris. This content will
+                        be hidden when it exceeds the container boundaries.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>overflow: scroll</h2>
+            <p>Scrollbars are always shown, even if content doesn't overflow.</p>
+
+            <div class="example">
+                <div class="overflow-container overflow-scroll">
+                    <p>This is a lot of content that exceeds the container dimensions.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris. You can scroll to
+                        see all the content.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>overflow: auto</h2>
+            <p>Scrollbars appear only when content overflows the container.</p>
+
+            <div class="example">
+                <div class="overflow-container overflow-auto">
+                    <p>This is a lot of content that exceeds the container dimensions.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris. Scrollbars will
+                        appear automatically when needed.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>overflow-x and overflow-y</h2>
+            <p>Control horizontal and vertical overflow separately.</p>
+
+            <div class="example">
+                <h3>overflow-x: scroll, overflow-y: hidden</h3>
+                <div class="overflow-container overflow-x-scroll">
+                    <div class="wide-content">
+                        This content is very wide and will create horizontal overflow.
+                        You can scroll horizontally but not vertically even if content is tall.
+                        This content is very wide and will create horizontal overflow.
+                    </div>
+                </div>
+            </div>
+
+            <div class="example">
+                <h3>overflow-x: hidden, overflow-y: scroll</h3>
+                <div class="overflow-container overflow-y-scroll">
+                    <p>This is tall content that exceeds the container height. Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore. You can scroll
+                        vertically but not horizontally.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
